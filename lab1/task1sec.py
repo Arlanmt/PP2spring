@@ -1,3 +1,4 @@
-if 5 > 2:
- Print("YES")
+if 5>2:
+    print("YES")
+    
  
