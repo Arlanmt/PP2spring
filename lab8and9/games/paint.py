@@ -1,5 +1,5 @@
 import pygame
-import sys
+import sys  
 
 pygame.init()
 
@@ -8,7 +8,7 @@ height = 600
 panel_height = 100
 width = 800
 
-# Создаем окно и поверхности
+# Создаем окно и поверхности 
 window = pygame.display.set_mode((width, height))
 screen = pygame.Surface((width, height - panel_height))
 another_layer = pygame.Surface((width, height - panel_height))

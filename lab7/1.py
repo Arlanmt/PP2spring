@@ -11,6 +11,10 @@ left = pygame.transform.scale(left, (300, 300))
 right = pygame.image.load('lab7/img/right.jpg')
 right = pygame.transform.scale(right, (200, 200))
 
+chas = pygame.image.load('lab7/img/right.jpg')
+chas = pygame.transform.scale(right, (170, 170))
+
+
 mickie = pygame.image.load('lab7/img/mickie.jpg')
 
 left_rect = left.get_rect()
@@ -27,6 +31,8 @@ minute = 0
 
 hour = 0
 
+second = 0
+
 clock = pygame.time.Clock()
 
 while True:
@@ -37,16 +43,25 @@ while True:
 
     minute -= 6
     hour -= 0.5
+    second -= 10
     rleft = pygame.transform.rotate(left, minute)
     left_rect = rleft.get_rect(center=center_l)
     left_rect.move_ip(100, 100)
+       
+
 
     rright = pygame.transform.rotate(right, hour)
     right_rect = rright.get_rect(center=center_r)
     right_rect.move_ip(150, 150)
 
+    rchas = pygame.transform.rotate(right, hour)
+    chas_rect = rchas.get_rect(center=center_r)
+    chas_rect.move_ip(50, 50)
+
     window.blit(mickie, (0, 0))
     window.blit(rright, right_rect.topleft)
     window.blit(rleft, left_rect.topleft)
+    window.blit(rchas, chas_rect.topleft)
+    
     pygame.display.update()
     clock.tick(60)

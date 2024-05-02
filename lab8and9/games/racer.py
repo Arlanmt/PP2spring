@@ -17,7 +17,7 @@ road =  pygame.image.load('lab8and9/img/road.png')
 FPS = 60
 FramePerSec = pygame.time.Clock()
 
-speed = 2
+speed = 3
 
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)

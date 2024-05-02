@@ -7,7 +7,7 @@ def level3(score):
     window = pygame.display.set_mode((850, 600))  # Creating the game window
 
     clock = pygame.time.Clock()  # Creating a Pygame clock to control frame rate
-    fps = 8  # Frames per second
+    fps = 9  # Frames per second
 
     font = pygame.font.Font(None, 36)  # Creating a font object for displaying text
     text = font.render("level1", True, (255, 255, 255))  # Rendering text for display
